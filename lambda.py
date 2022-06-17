@@ -6,10 +6,10 @@ people = [
 ]
 
 
-def f(person):
-    return person["name"]
+# def f(person):
+#     return person["name"]
+# lambda replace this function
 
-
-people.sort(key=f)
+people.sort(key=lambda person: person["name"])
 
 print(people)
